@@ -8,8 +8,18 @@
   </head>
   <body>
     <header>
-      <h1>Mergington High School</h1>
-      <h2>Extracurricular Activities</h2>
+      <div class="header-row">
+        <div></div>
+        <div>
+          <h1>Mergington High School</h1>
+          <h2>Extracurricular Activities</h2>
+        </div>
+        <div class="auth-panel">
+          <span id="user-status">Not signed in</span>
+          <button id="login-toggle" type="button">Login</button>
+          <button id="logout-btn" type="button" class="hidden">Logout</button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -23,6 +33,25 @@
 
       <section id="signup-container">
         <h3>Sign Up for an Activity</h3>
+        <form id="auth-form" class="auth-form hidden">
+          <div class="form-group">
+            <label for="auth-email">Email:</label>
+            <input type="email" id="auth-email" required placeholder="your-email@mergington.edu" />
+          </div>
+          <div class="form-group">
+            <label for="auth-password">Password:</label>
+            <input type="password" id="auth-password" required placeholder="Password" />
+          </div>
+          <div class="form-group hidden" id="name-group">
+            <label for="auth-name">Full Name:</label>
+            <input type="text" id="auth-name" placeholder="Student name" />
+          </div>
+          <div class="auth-actions">
+            <button type="submit" id="auth-submit">Login</button>
+            <button type="button" id="auth-switch" class="secondary-btn">Register instead</button>
+          </div>
+        </form>
+
         <form id="signup-form">
           <div class="form-group">
             <label for="email">Student Email:</label>

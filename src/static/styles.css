@@ -24,6 +24,31 @@ header {
   border-radius: 5px;
 }
 
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.header-row > div {
+  flex: 1;
+}
+
+.auth-panel {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+.auth-panel button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+}
+
 header h1 {
   margin-bottom: 10px;
 }
@@ -186,6 +211,28 @@ button:hover {
   background-color: #d1ecf1;
   color: #0c5460;
   border: 1px solid #bee5eb;
+}
+
+.auth-form {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f7f7f7;
+}
+
+.auth-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.secondary-btn {
+  background-color: #6c757d;
+}
+
+.secondary-btn:hover {
+  background-color: #5a636c;
 }
 
 .hidden {
